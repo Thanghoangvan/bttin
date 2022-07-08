@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="02" onchange="mydemo2()" ><b>Bảng Cửu Chương x</b></p>
+    <table>
+        <th>
+            <legend>
+                <b >Enter value</b>
+             <input type="text" id="01">
+            </legend>
+        </th>
+        <th>
+            <button onclick="mydemo()" >Check</button>
+        </th>
+    </table>
+</body>
+</html>
+<script>
+    function mydemo(){
+  let a=document.getElementById("01").value;
+    let i;
+    let S;
+    for(i=1;i<=10;i=i+1){
+        S=a*i;
+        document.write(a+ " x "+ i + "=" + S +"<br>")
+    }}
+    function mydemo2(){
+        let a=document.getElementById("01").value;
+        document.getElementById("02").innerHTML="Bảng Cửu Chương" + a;
+        document.getElementById("02").style.color="red";
+    }
+</script>

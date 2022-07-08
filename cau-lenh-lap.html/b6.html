@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <legend>
+        <b>Enter a: </b>
+        <input type="text" placeholder="Enter a" id="01">
+    </legend>
+    <legend>
+        <b>Enter b: </b>
+        <input type="text" placeholder="Enter b" id="02">
+    </legend>
+    <button onclick="mydemo()">Check</button>
+</body>
+</html>
+<script>
+    function mydemo(){
+    debugger;
+  let a=+document.getElementById("01").value;
+  let b=+document.getElementById("02").value;
+  let i;
+  let S=0;
+  if(a<=b){
+  for(i=a;i<=b;i=i+1){
+    S=S+i;}
+    document.write(S);
+
+
+  }
+  else{
+    document("Error")
+  }}
+ 
+
+
+</script>
